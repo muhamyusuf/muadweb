@@ -21,7 +21,7 @@ export const TitleText = ({ title, textStyles }) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    className={`mt-[8px] font-bold md:text-[50px] text-[40px] text-white ${textStyles}`}
+    className={`mt-[8px] font-bold md:text-[50px] text-[40px] text-gradient ${textStyles}`}
   >
     {title}
   </motion.h2>
@@ -32,7 +32,7 @@ export const TextGradient = ({ title }) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    className="font-extrabold md:text-[50px] text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-white"
+    className="font-extrabold md:text-[50px] text-[40px] text-transparent bg-gradient-to-r from-orange-500 from-90% to-teal-400 to-10%  bg-clip-text"
   >
     {title}
   </motion.h2>

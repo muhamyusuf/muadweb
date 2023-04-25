@@ -19,7 +19,7 @@ const Keunggulan = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="z-10 flex flex-col justify-center"
       >
-        <TypingText title="Keunggulan.." />
+        <TypingText title="Prinsip.." />
         <p className="mt-5 font-normal text-black text-md md:text-xl">
           Hal yang membedakan{' '}
           <span className="font-bold text-gradient">SMP Mu Ahmad Dahlan</span>{' '}

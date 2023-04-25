@@ -1,7 +1,7 @@
 import Hero from './Hero';
 import Story from './Story';
-import Explore from './Explore';
-import Keunggulan from './Keunggulan';
+// import Explore from './Explore';
+import Principle from './Principle';
 import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
@@ -11,8 +11,8 @@ import Why from './Why';
 export {
   Hero,
   Story,
-  Explore,
-  Keunggulan,
+  // Explore,
+  Principle,
   WhatsNew,
   World,
   Insights,

@@ -56,15 +56,39 @@ export const startingFeatures = [
 export const newFeatures = [
   {
     imgUrl: '/fast.png',
-    title: 'Load more more Faster',
+    title: 'Islamic',
     subtitle:
-      'A simple website design may include a clean layout, easy-to-read fonts, and minimal use of graphics and multimedia elements',
+      'Pendiidkan islam, akhlak, akan membuat para siswa lebih matang mengenai pengetahuan dunia dan akhirat',
   },
   {
     imgUrl: '/aesthethic.png',
-    title: 'Aesthetics and Minimalist',
+    title: 'Science',
     subtitle:
-      'Clean and uncluttered layout, with a focus on using negative space to draw attention to key elements on the page',
+      'Dengan berbekal pengetahuan sains yang kuat, siswa akan lebih mudah dalam menguasai ilmu pengetahuan dan teknologi',
+  },
+  {
+    imgUrl: '/aesthethic.png',
+    title: 'Sports',
+    subtitle:
+      'Dengan mengajarkan olahraga, siswa akan lebih sehat dan dapat mengembangkan bakatnya dalam bidang olahraga',
+  },
+  {
+    imgUrl: '/aesthethic.png',
+    title: 'Languange',
+    subtitle:
+      'Dengan menguasai berbagai macam bahasa, siswa dapat berkomunikasi dan beradaptasi dengan baik di lingkungan yang berbeda',
+  },
+  {
+    imgUrl: '/aesthethic.png',
+    title: 'Art & Culture',
+    subtitle:
+      'Membentuk siswa yang kreatif, inovatif, dan memiliki jiwa seni yang tinggi & menghargai budaya',
+  },
+  {
+    imgUrl: '/aesthethic.png',
+    title: 'Life Skills',
+    subtitle:
+      'Kecakapan hidup melalui penerapan brainstorming, problem solving, dan critical thinking',
   },
 ];
 

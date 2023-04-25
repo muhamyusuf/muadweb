@@ -1,30 +1,25 @@
+import { Footer, Navbar } from '../components';
 import {
-  // Footer,
-  Navbar,
-} from '../components';
-import {
-  // Story,
+  Story,
   // Explore,
-  // Feedback,
-  Keunggulan,
+  Feedback,
+  Principle,
   Hero,
-  // Insights,
-  // WhatsNew,
+  Insights,
+  WhatsNew,
   Why,
-  // World,
+  World,
 } from '../sections';
 
 const Home = () => (
   <div className="overflow-hidden bg-primary-blue">
     <Navbar />
     <Hero />
-    <div className="relative bg-white">
+    <div className="relative bg-[#f4f4f4]">
       <Why />
-      <Keunggulan />
-    </div>
-    {/* <div className="relative">
+      <Principle />
       <WhatsNew />
-      <Explore />
+      {/* <Explore /> */}
       <Story />
     </div>
     <World />
@@ -32,7 +27,7 @@ const Home = () => (
       <Insights />
       <Feedback />
     </div>
-    <Footer /> */}
+    <Footer />
   </div>
 );
 

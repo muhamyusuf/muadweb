@@ -28,7 +28,9 @@ const Why = () => (
               SMP Mu Ahmad Dahlan
             </span>{' '}
             adalah lembaga pendidikan berbasis keagamaan yang sudah
-            berpengalaman dan mendunia lebih dari 5 tahun sejak 2018
+            berpengalaman dan mendunia lebih dari{' '}
+            <span className="text-orange-500">7</span> tahun sejak{' '}
+            <span className="text-orange-500">2015</span>
           </p>
         </div>
       </motion.div>
