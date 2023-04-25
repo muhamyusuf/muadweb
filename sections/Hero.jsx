@@ -1,8 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
   <section className={`yPaddings`} id="Home">
