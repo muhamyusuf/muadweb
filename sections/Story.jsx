@@ -1,48 +1,104 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { TypingText } from '../components';
 import { fadeIn, staggerContainer } from '../utils/motion';
+import { Carousel } from '../components';
 
-const Story = () => (
-  <section className="relative z-10 paddings" id="Story">
-    <div className="z-0 gradient-02" />
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="flex-col mx-auto innerWidth flexCenter"
-    >
-      <TypingText title="About Simplicity" textStyles="text-center" />
+const imagesItems = [
+  <Image
+    className="w-full h-full"
+    src="/book.png"
+    alt="teste"
+    width={1}
+    height={1}
+  />,
+  <Image
+    className="w-full h-full"
+    src="/book.png"
+    alt="teste"
+    width={1}
+    height={1}
+  />,
+  <Image
+    className="w-full h-full"
+    src="/book.png"
+    alt="teste"
+    width={1}
+    height={1}
+  />,
+  <Image
+    className="w-full h-full"
+    src="/book.png"
+    alt="teste"
+    width={1}
+    height={1}
+  />,
+  <Image
+    className="w-full h-full"
+    src="/book.png"
+    alt="teste"
+    width={1}
+    height={1}
+  />,
+  <Image
+    className="w-full h-full"
+    src="/book.png"
+    alt="teste"
+    width={1}
+    height={1}
+  />,
+];
 
-      <motion.p
-        variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+const Story = () => {
+  return (
+    <section className="relative z-10 paddings" id="Story">
+      <div className="z-0 gradient-02" />
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="flex-col mx-auto innerWidth flexCenter"
       >
-        <span className="font-extrabold text-white">Simplicity</span> is a new
-        thing in design, where you can enjoy the catching visual and statisfy
-        look with
-        <span className="font-extrabold text-white">
-          Value & Meaningfully
-        </span>{' '}
-        of design, using consistency{' '}
-        <span className="font-extrabold text-white">Component</span> structure,
-        you can easily design and develop design system whatever you want, turn
-        your web design into{' '}
-        <span className="font-extrabold text-white">Simplicity</span> concepts.
-        Let's <span className="font-extrabold text-white">explore</span> the
-        simplicity application for web development
-      </motion.p>
+        <TypingText title="Alumni's Story.." textStyles="text-center" />
 
-      <motion.img
-        variants={fadeIn('up', 'tween', 0.3, 1)}
-        src="/arrow-down.svg"
-        alt="arrow down"
-        className="w-[18px] h-[28px] object-contain mt-[28px]"
-      />
-    </motion.div>
-  </section>
-);
+        <motion.div
+          variants={fadeIn('up', 'tween', 0.2, 1)}
+          className="font-normal sm:text-[32px] text-[20px] text-center text-black"
+        >
+          <div className="container flex-col flexCenter">
+            <p className="mt-5 text-lg font-normal text-center text-black md:text-xl lg:text-left">
+              <span className="font-extrabold text-gradient">
+                Pendapat dan Cerita
+              </span>{' '}
+              Alumni selama menempuh pendidikan di{' '}
+              <span className="font-extrabold text-gradient">
+                SMP Mu Ahmad Dahlan
+              </span>
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn('up', 'tween', 0.5, 1)}
+          className="flex-col w-full flexCenter"
+        >
+          <div className="flex flex-col justify-center mb-10 space-y-6">
+            <h1 className="text-4xl font-bold md:text-5xl">
+              Beautiful animated gradients
+            </h1>
+            <p className="text-xs text-center opacity-75">
+              Explore, generate and use seamless animation gradients for your
+              next projects
+            </p>
+          </div>
+          <Carousel items={imagesItems} width={1} height={1} />
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+};
 
 export default Story;

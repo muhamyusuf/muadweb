@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 .innerWidth {
@@ -52,8 +54,51 @@
   @apply text-transparent bg-gradient-to-r from-orange-500 to-black bg-clip-text;
 }
 /* =====================Text Style================ */
-
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body;
+  }
+}
+
+@layer components {
+  .header-link-item {
+    @apply text-xs font-medium transition duration-300 opacity-75 cursor-pointer hover:opacity-100;
+  }
+
+  .carousel-btn-switch-card {
+    @apply absolute z-40 flex h-9 w-9 cursor-pointer items-center justify-center
+      rounded-full border-2 border-[#302e30] bg-[#181818] text-2xl opacity-75 transition duration-300 hover:opacity-100 md:h-12 md:w-12;
+  }
+
+  .carousel-btn-switch-card-left {
+    @apply right-1/2 top-1/2 translate-x-[-200px] translate-y-[-50%] transform sm:translate-x-[-250px] md:translate-x-[-300px] lg:translate-x-[-350px];
+  }
+
+  .carousel-btn-switch-card-right {
+    @apply top-1/2 left-1/2 translate-x-[200px] translate-y-[-50%] transform sm:translate-x-[250px] md:translate-x-[300px] lg:translate-x-[350px];
+  }
+
+  .carousel-indicator {
+    @apply absolute flex items-center justify-center w-24 h-5 space-x-1 transform -translate-x-1/2 left-1/2 -bottom-4 md:-bottom-10;
+  }
+
+  .carousel-indicator-dots {
+    @apply w-2 h-2 transition-all duration-500 bg-white rounded-full opacity-50 hover:w-4 hover:opacity-100;
+  }
+
+  .carousel-container {
+    @apply relative w-3/6 h-32 sm:h-40 md:h-56;
+    perspective: 450px;
+    transform-style: preserve-3d;
+  }
+
+  .carousel-item {
+    @apply absolute h-full w-full cursor-pointer overflow-hidden rounded-3xl drop-shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-700 ease-in-out;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -156,8 +201,4 @@
 
   background: #65c4fa;
   filter: blur(150px);
-}
-
-.stopscroll {
-  overflow: hidden;
 }

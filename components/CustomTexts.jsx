@@ -32,7 +32,7 @@ export const TextGradient = ({ title }) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    className="font-extrabold md:text-[50px] text-[40px] text-transparent bg-gradient-to-r from-orange-500 from-90% to-teal-400 to-10%  bg-clip-text"
+    className="font-extrabold md:text-[45px] text-[40px] text-transparent bg-gradient-to-r from-orange-500 from-90% to-teal-400 to-10% bg-clip-text"
   >
     {title}
   </motion.h2>

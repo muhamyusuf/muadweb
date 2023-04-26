@@ -1,3 +1,41 @@
+export const sliderData = [
+  {
+    id: 1,
+    image: '/gradientweb.png',
+    alt: 'gradientweb',
+  },
+  {
+    id: 2,
+    image: '/gradientweb.png',
+    alt: 'gradientweb',
+  },
+  {
+    id: 3,
+    image: '/gradientweb.png',
+    alt: 'gradientweb',
+  },
+  {
+    id: 4,
+    image: '/gradientweb.png',
+    alt: 'gradientweb',
+  },
+  {
+    id: 5,
+    image: '/gradientweb.png',
+    alt: 'gradientweb',
+  },
+  {
+    id: 6,
+    image: '/gradientweb.png',
+    alt: 'gradientweb',
+  },
+  {
+    id: 7,
+    image: '/gradientweb.png',
+    alt: 'gradientweb',
+  },
+];
+
 export const navbarLinks = [
   {
     name: 'Why',

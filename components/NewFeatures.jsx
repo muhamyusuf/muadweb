@@ -6,7 +6,7 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
     <h1 className="mt-[26px] font-extrabold text-[24px] leading-[30.24px] text-left text-gradient">
       {title}
     </h1>
-    <p className="flex-1 mt-[16px] text-left font-normal text-[14px] leading-[32.4px]">
+    <p className="flex-1 mt-[16px] text-left font-normal text-[14px] leading-[18.4px]">
       {subtitle}
     </p>
 
