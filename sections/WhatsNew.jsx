@@ -7,7 +7,7 @@ import { NewFeatures, TypingText, TextGradient } from '../components';
 import { staggerContainer, fadeIn } from '../utils/motion';
 
 const WhatsNew = () => (
-  <section className="relative z-10 paddings">
+  <section className="relative z-10 mt-10 paddings">
     <motion.div
       variants={staggerContainer}
       initial="hidden"

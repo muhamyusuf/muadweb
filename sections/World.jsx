@@ -14,27 +14,42 @@ const World = () => (
       viewport={{ once: false, amount: 0.25 }}
       className="flex flex-col mx-auto innerWidth"
     >
-      <TypingText title="Simplicity is Trend" textStyles="text-center" />
-      <div className="flex-col gap-2 flexCenter">
-        <TitleText
-          title={<>Apply simplicity and be</>}
-          textStyles="text-center"
-        />
-        <TextGradient title={<>GLOBAL</>} />
-      </div>
+      <TypingText title="Educational Scope.." textStyles="text-center" />
 
-      <motion.div
-        variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relative mt-[68px] flex w-full h-[550px]"
-      >
-        <Image
-          src="/map.png"
-          alt="map"
-          width={1}
-          height={1}
-          className="object-cover w-full h-full"
-        />
-      </motion.div>
+      <div className="flex flex-wrap items-center justify-around w-full">
+        <motion.div
+          variants={fadeIn('up', 'tween', 0.3, 1)}
+          className="relative flex w-full lg:w-1/2"
+        >
+          <Image
+            src="/world.png"
+            alt="map"
+            width={1}
+            height={1}
+            className="object-contain w-full h-full"
+          />
+        </motion.div>
+
+        <div className="flex-col w-full gap-2 text-center lg:text-left lg:w-1/2">
+          <TextGradient title={<>MuAD goes INTERNATIONAL</>} />
+
+          <motion.div
+            variants={fadeIn('up', 'tween', 0.05, 0.5)}
+            className="flex flex-wrap items-baseline justify-center gap-2"
+          >
+            <p className="mt-5 text-lg font-normal text-center text-black md:text-xl lg:text-left">
+              <span className="font-extrabold text-gradient">
+                Kolaborasi dan Bertukar Informasi
+              </span>{' '}
+              dengan berbagai lembaga pendidikan baik di dalam negeri maupun di
+              luar negeri melalui program{' '}
+              <span className="font-extrabold text-gradient">
+                Student's Exchange
+              </span>
+            </p>
+          </motion.div>
+        </div>
+      </div>
     </motion.div>
   </section>
 );

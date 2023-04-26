@@ -10,7 +10,10 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
       {subtitle}
     </p>
 
-    <button className="flexCenter mt-[24px] w-full h-[50px] rounded-md bg-primary-blue hover:border-[#132d3ad4] hover:border-2 hover:bg-transparent hover:text-primary-blue transition duration-200 ease-out  text-white font-semibold text-[18px]">
+    <button
+      type="button"
+      className="flexCenter mt-[24px] w-full h-[50px] rounded-md bg-primary-blue hover:border-[#132d3ad4] hover:border-2 hover:bg-transparent hover:text-primary-blue transition duration-200 ease-out  text-white font-semibold text-[18px]"
+    >
       Lihat Detail
     </button>
   </div>

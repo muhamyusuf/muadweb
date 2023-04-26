@@ -20,10 +20,8 @@ const Home = () => (
       <Principle />
       <WhatsNew />
       {/* <Explore /> */}
+      <World />
       <Story />
-    </div>
-    <World />
-    <div className="relative">
       <Insights />
       <Feedback />
     </div>
