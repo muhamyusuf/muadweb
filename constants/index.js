@@ -153,19 +153,23 @@ export const insights = [
 
 export const socials = [
   {
-    name: 'twitter',
-    url: '/twitter.svg',
+    name: 'youtube',
+    url: '/youtube.svg',
+    href:'https://www.youtube.com/channel/UCgZRis8vCzPfdEdYLwngYVw',
   },
   {
-    name: 'linkedin',
-    url: '/linkedin.svg',
+    name: 'whatsapp',
+    url: '/whatsapp.svg',
+    href:'https://api.whatsapp.com/send?phone=6281339777812',
   },
   {
     name: 'instagram',
     url: '/instagram.svg',
+    href:'https://www.instagram.com/officialsmpmuad/',
   },
   {
     name: 'facebook',
     url: '/facebook.svg',
+    href:'https://www.facebook.com/smpmuad/?_rdc=2&_rdr',
   },
 ];
