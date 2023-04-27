@@ -22,8 +22,8 @@ const Home = () => (
       {/* <Explore /> */}
       <World />
       <Story />
-      <Insights />
       <Feedback />
+      <Insights />
     </div>
     <Footer />
   </div>

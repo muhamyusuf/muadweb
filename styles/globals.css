@@ -69,7 +69,7 @@
 
   .carousel-btn-switch-card {
     @apply absolute z-40 flex h-9 w-9 cursor-pointer items-center justify-center
-      rounded-full border-2 border-[#302e30] bg-[#181818] text-2xl opacity-75 transition duration-300 hover:opacity-100 md:h-12 md:w-12;
+      rounded-full border-2 border-primary-blue bg-[#ffffff] text-2xl opacity-80 transition duration-100 hover:opacity-100 md:h-12 md:w-12;
   }
 
   .carousel-btn-switch-card-left {
@@ -81,11 +81,11 @@
   }
 
   .carousel-indicator {
-    @apply absolute flex items-center justify-center w-24 h-5 space-x-1 transform -translate-x-1/2 left-1/2 -bottom-4 md:-bottom-10;
+    @apply absolute flex items-center justify-center w-24 h-5 space-x-1 transform -translate-x-1/2 cursor-pointer left-1/2 -bottom-4 md:-bottom-10;
   }
 
   .carousel-indicator-dots {
-    @apply w-2 h-2 transition-all duration-500 bg-white rounded-full opacity-50 hover:w-4 hover:opacity-100;
+    @apply w-2 h-2 transition-all duration-200 rounded-full opacity-50 bg-primary-blue hover:w-4 hover:opacity-100;
   }
 
   .carousel-container {
@@ -181,16 +181,16 @@
   );
 }
 
-.feedback-gradient {
+/* .feedback-gradient {
   position: absolute;
   width: 200px;
   height: 316px;
   left: 0px;
   top: 0px;
 
-  background: #8d39a3;
+  background: #132d3a;
   filter: blur(175px);
-}
+} */
 
 .footer-gradient {
   position: absolute;

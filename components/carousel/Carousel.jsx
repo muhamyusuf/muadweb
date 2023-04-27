@@ -8,18 +8,18 @@ const Carousel = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   function handleNextItemBtn() {
-    setActiveIndex((prev) => (prev + 1 < items.length ? prev + 1 : prev));
+    setActiveIndex((prev) => (prev - 1 < items.length ? prev + 1 : prev));
   }
 
   function handlePrevItemBtn() {
-    setActiveIndex((prev) => (prev - 1 >= 0 ? prev - 1 : prev));
+    setActiveIndex((prev) => (prev + 1 >= 0 ? prev - 1 : prev));
   }
 
   return (
     <div className="carousel-container">
       {activeIndex > 0 && (
         <button
-          className="carousel-btn-switch-card-left carousel-btn-switch-card"
+          className="text-primary-blue carousel-btn-switch-card-left carousel-btn-switch-card"
           onClick={handlePrevItemBtn}
           type="button"
         >
@@ -31,10 +31,9 @@ const Carousel = ({ items }) => {
           {item}
         </CarouselItems>
       ))}
-      ;
       {activeIndex < items.length - 1 && (
         <button
-          className="carousel-btn-switch-card-right carousel-btn-switch-card"
+          className="text-primary-blue carousel-btn-switch-card-right carousel-btn-switch-card"
           onClick={handleNextItemBtn}
           type="button"
         >

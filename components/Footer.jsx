@@ -2,9 +2,11 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 import { socials } from '../constants';
 
 import { footerVariants } from '../utils/motion';
+import muad from '../public/muad.png';
 
 const Footer = () => (
   <motion.footer
@@ -13,7 +15,6 @@ const Footer = () => (
     whileInView="show"
     className="relative py-8 xPaddings"
   >
-    <div className="footer-gradient" />
     <div className="flex flex-col gap-8 mx-auto innerWidth">
       <div className="flex flex-wrap items-center justify-between gap-5">
         <h4 className="font-bold md:text-[50px] text-[30px] text-white">
@@ -40,7 +41,9 @@ const Footer = () => (
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">Simplicity</h4>
+          <Link to="nav" className="cursor-pointer z-[10]">
+            <Image src={muad} alt="logo" height={25} width={100} />
+          </Link>
 
           <div className="flex gap-4">
             {socials.map((social) => (

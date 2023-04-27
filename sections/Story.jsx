@@ -42,19 +42,11 @@ const imagesItems = [
     width={1}
     height={1}
   />,
-  <Image
-    className="w-full h-full"
-    src="/book.png"
-    alt="teste"
-    width={1}
-    height={1}
-  />,
 ];
 
 const Story = () => {
   return (
     <section className="relative z-10 paddings" id="Story">
-      <div className="z-0 gradient-02" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -83,9 +75,9 @@ const Story = () => {
 
         <motion.div
           variants={fadeIn('up', 'tween', 0.5, 1)}
-          className="flex-col w-full flexCenter"
+          className="flex-col w-full mt-10 flexCenter"
         >
-          <div className="flex flex-col justify-center mb-10 space-y-6">
+          {/* <div className="flex flex-col justify-center mb-10 space-y-6">
             <h1 className="text-4xl font-bold md:text-5xl">
               Beautiful animated gradients
             </h1>
@@ -93,8 +85,8 @@ const Story = () => {
               Explore, generate and use seamless animation gradients for your
               next projects
             </p>
-          </div>
-          <Carousel items={imagesItems} width={1} height={1} />
+          </div> */}
+          <Carousel items={imagesItems} />
         </motion.div>
       </motion.div>
     </section>

@@ -133,21 +133,21 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: '/planet-06.png',
-    title: 'Simplicity: The Key to Effective Communication and Design',
+    title: 'Gallery',
     subtitle:
-      'How Minimalism and Clarity Can Enhance User Experience and Engagement',
+      'Kumpulan foto dan video kegiatan sekolah',
   },
   {
     imgUrl: '/planet-07.png',
-    title: 'The Power of Simplicity in Problem-Solving',
+    title: 'Achievment',
     subtitle:
-      'Streamlining Processes and Reducing Complexity for Improved Efficiency and Results.',
+      'Prestasi yang telah diperoleh oleh siswa dan guru SMP Mu Ahmad Dahlan',
   },
   {
     imgUrl: '/planet-08.png',
-    title: 'Simplicity vs. Complexity: Striking the Right Balance',
+    title: 'Blog & Article',
     subtitle:
-      'Navigating the Challenges of Design and Decision-Making to Optimize Performance and User Satisfaction',
+      'Berita terbaru seputar SMP Mu Ahmad Dahlan',
   },
 ];
 

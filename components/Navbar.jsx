@@ -20,6 +20,7 @@ const Navbar = () => {
       initial="hidden"
       whileInView="show"
       className="relative z-30 py-8 xPaddings"
+      id="nav"
     >
       <div className="flex justify-between gap-8 mx-auto innerWidth">
         <Link to="Home" className="cursor-pointer z-[10]">
